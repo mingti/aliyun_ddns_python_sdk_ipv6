@@ -1,0 +1,13 @@
+[project]
+name = "aliyun-ddns"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alibabacloud-alidns20150109>=3.6.0",
+    "alibabacloud-darabonba-env>=0.0.1",
+    "alibabacloud-sts20150401>=1.1.6",
+    "alibabacloud-tea-console>=0.0.1",
+    "dotenv>=0.9.9",
+]
