@@ -61,7 +61,6 @@ class OpenAPI:
                    "security_token": assumeRoleResponseBodyCredentials.security_token
                    }
             logger.info("获取STS token 成功!")
-            print(res)
 
         except Exception as error:
             # 错误 message
