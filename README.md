@@ -36,5 +36,5 @@ https://help.aliyun.com/zh/ram/developer-reference/use-the-sts-openapi-example?s
 
 # TODO
 完善readme,doc
-
+加上一个缓存文件, 替代每次请求解析记录
 
