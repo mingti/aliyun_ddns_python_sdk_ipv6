@@ -1,8 +1,13 @@
 import logging
 
+import os
+from dotenv import load_dotenv
+# 读取.env文件
+load_dotenv()
+
 logger = logging.getLogger('ddns')
 
-log_file_path = "./ddns.log"
+log_file_path = os.environ['LOG_FILE_PATH']
 
 
 
