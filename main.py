@@ -51,7 +51,8 @@ def get_ipv6(interface,eui=False):
         if addr['interface'] == interface or addr['interface'] is None:
             
             if eui:
-                if 'ff:fe' in ipaddress.IPv6Address(addr['address']).exploded.lower():
+                if 'ff:fe' in ipaddress.IPv6Address(addr['address']).exploded.lower() \
+                   and 'fd'!= ipaddress.IPv6Address(addr['address']).exploded.lower()[0:2]: #排除ULA地址(局域网)
                     res.append(addr['address'])
             else:
                 res.append(addr['address'])
